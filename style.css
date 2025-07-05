@@ -1,3 +1,4 @@
+/* ===== Global Reset & Typography ===== */
 * {
   margin: 0;
   padding: 0;
@@ -5,125 +6,144 @@
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+  font-family: 'Poppins', sans-serif;
+  background-color: #0f1115;
+  color: #e2e2e2;
+  line-height: 1.6;
+  font-size: 16px;
 }
 
+/* ===== Container ===== */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ===== Header ===== */
 .main-header {
-  background-color: #222;
-  color: white;
-  padding: 20px 0;
+  background-color: #12141b;
+  padding: 30px 0 15px;
   text-align: center;
+  border-bottom: 1px solid #1e1e1e;
 }
 
-.main-header .logo {
-  font-size: 28px;
-  font-weight: bold;
+.logo {
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffffff;
 }
 
-.main-header .tagline {
-  font-size: 14px;
-  color: #bbb;
-  margin-top: 5px;
+.tagline {
+  color: #a0a0a0;
+  font-size: 16px;
+  margin-top: 6px;
 }
 
 .nav-links {
-  list-style: none;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  padding: 15px 0;
-  background: #333;
-}
-
-.nav-links li {
-  margin: 0 15px;
+  gap: 30px;
+  list-style: none;
+  margin-top: 25px;
+  flex-wrap: wrap;
 }
 
 .nav-links a {
-  color: white;
+  color: #bbbbbb;
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.3s;
+  transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
   color: #00bfff;
 }
 
+/* ===== Hero Section ===== */
 .hero {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding: 60px 20px;
-  background-color: #1c1c1c;
-  color: white;
+  background-color: #181b22;
+  padding: 100px 20px;
 }
 
 .hero-content {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 30px;
-  max-width: 1100px;
-  margin: auto;
+  gap: 40px;
+  justify-content: space-between;
 }
 
 .hero .text {
   flex: 1;
 }
 
-.hero .text h2 {
-  font-size: 36px;
-  margin-bottom: 15px;
-}
-
-.hero .text p {
-  font-size: 18px;
+.hero h2 {
+  font-size: 40px;
+  font-weight: 600;
   margin-bottom: 20px;
 }
 
+.hero p {
+  font-size: 18px;
+  color: #ccc;
+  margin-bottom: 25px;
+}
+
 .hero-image img {
-  max-width: 250px;
-  border-radius: 10px;
+  width: 250px;
+  border-radius: 12px;
+  border: 3px solid #2c2c2c;
+}
+
+/* ===== Buttons ===== */
+.btn,
+.btn-outline {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
 
 .btn {
-  display: inline-block;
-  background: #007bff;
-  color: white;
-  padding: 12px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s;
+  background-color: #00bfff;
+  color: #fff;
 }
 
 .btn:hover {
-  background: #0056b3;
+  background-color: #0099cc;
 }
 
+.btn-outline {
+  border: 2px solid #00bfff;
+  color: #00bfff;
+  background-color: transparent;
+}
+
+.btn-outline:hover {
+  background-color: #00bfff;
+  color: #fff;
+}
+
+/* ===== About Section ===== */
 .about {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 60px 20px;
-  background: white;
+  padding: 80px 20px;
+  background-color: #0f1115;
 }
 
 .about-content {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1100px;
-  margin: auto;
-  gap: 30px;
+  gap: 40px;
+  align-items: center;
 }
 
 .about-image img {
-  max-width: 300px;
-  border-radius: 10px;
+  width: 260px;
+  border-radius: 12px;
+  border: 3px solid #2c2c2c;
 }
 
 .about-text {
@@ -131,18 +151,48 @@ body {
 }
 
 .about-text h3 {
-  font-size: 28px;
-  margin-bottom: 15px;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: 600;
 }
 
 .about-text p {
-  margin-bottom: 15px;
-  line-height: 1.6;
+  color: #ccc;
+  margin-bottom: 20px;
 }
 
+/* ===== Footer ===== */
 footer {
-  background: #111;
-  color: #aaa;
+  background-color: #12141b;
   text-align: center;
   padding: 20px 0;
+  color: #777;
+  font-size: 14px;
+  border-top: 1px solid #1e1e1e;
 }
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  .hero-content,
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .hero h2 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .about-text h3 {
+    font-size: 26px;
+  }
+}
+
