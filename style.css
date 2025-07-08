@@ -1,11 +1,12 @@
-/* === Premium Portfolio Styling === */
+/* === Premium Minimalist Portfolio === */
 
 :root {
-  --bg-color: #f8f9fc;
-  --primary: #111;
-  --accent: #4f46e5;
+  --bg-color: #f5f7fa;
+  --text-color: #1f2937;
+  --accent-color: #4f46e5;
   --card-bg: #ffffff;
-  --soft-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+  --border-color: #e5e7eb;
+  --shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
 }
 
 * {
@@ -17,138 +18,137 @@
 body {
   font-family: 'Outfit', sans-serif;
   background-color: var(--bg-color);
-  color: var(--primary);
+  color: var(--text-color);
   line-height: 1.7;
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 header {
-  background-color: var(--primary);
-  color: #fff;
+  background: #fff;
   padding: 20px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid var(--border-color);
   position: sticky;
   top: 0;
-  z-index: 999;
-  box-shadow: var(--soft-shadow);
+  z-index: 1000;
+}
+
+header h1 {
+  font-weight: 600;
+  font-size: 1.5rem;
 }
 
 header nav a {
-  color: #fff;
+  color: var(--text-color);
   margin-left: 20px;
   text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 header nav a:hover {
-  color: var(--accent);
+  color: var(--accent-color);
 }
 
 .hero {
-  background: linear-gradient(to right, #eef2ff, #ffffff);
-  padding: 100px 20px;
+  background-color: #ffffff;
+  padding: 80px 20px;
   text-align: center;
 }
 
 .hero-img {
-  width: 160px;
-  height: 160px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
-  border: 5px solid var(--primary);
   object-fit: cover;
-  margin-bottom: 25px;
-  box-shadow: var(--soft-shadow);
+  border: 2px solid var(--border-color);
+  box-shadow: var(--shadow);
+  margin-bottom: 20px;
 }
 
 .hero h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
+  font-size: 1.8rem;
+  margin: 15px 0 8px;
+  font-weight: 600;
 }
 
 .hero p {
-  font-size: 1.1rem;
-  color: #555;
+  font-size: 1rem;
+  color: #6b7280;
 }
 
 .cta {
   display: inline-block;
-  margin-top: 25px;
-  background: var(--primary);
+  margin-top: 20px;
+  background: var(--accent-color);
   color: #fff;
-  padding: 12px 26px;
-  border-radius: 30px;
+  padding: 12px 24px;
+  border-radius: 25px;
   text-decoration: none;
-  font-weight: 600;
-  box-shadow: var(--soft-shadow);
+  font-weight: 500;
   transition: all 0.3s ease;
 }
 
 .cta:hover {
-  background-color: #333;
-  transform: scale(1.05);
+  background-color: #3730a3;
 }
 
 section {
-  padding: 80px 20px;
-  max-width: 960px;
+  padding: 60px 20px;
+  max-width: 880px;
   margin: auto;
 }
 
 h2 {
-  font-size: 2rem;
-  margin-bottom: 40px;
+  font-size: 1.6rem;
+  font-weight: 600;
   text-align: center;
-  color: var(--primary);
+  margin-bottom: 30px;
 }
 
 .card {
   background-color: var(--card-bg);
-  box-shadow: var(--soft-shadow);
-  padding: 30px;
-  border-radius: 16px;
-  margin: 20px 0;
-  transition: transform 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-4px);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  margin-bottom: 30px;
 }
 
 .skills {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 20px;
   list-style: none;
   padding: 0;
 }
 
 .skills li {
-  background-color: #e0e7ff;
+  background-color: #f0f1f8;
   padding: 15px;
-  border-radius: 12px;
+  border-radius: 10px;
   text-align: center;
-  font-weight: 600;
-  box-shadow: var(--soft-shadow);
+  font-weight: 500;
+  color: var(--text-color);
+  box-shadow: var(--shadow);
 }
 
 .resume-button {
-  background-color: var(--accent);
+  background-color: var(--accent-color);
   color: #fff;
-  padding: 12px 26px;
-  border-radius: 30px;
-  font-weight: 600;
+  padding: 10px 24px;
+  border-radius: 25px;
   text-decoration: none;
+  font-weight: 500;
   display: inline-block;
-  box-shadow: var(--soft-shadow);
-  transition: transform 0.3s ease;
+  transition: 0.3s ease;
+  margin-top: 10px;
 }
 
 .resume-button:hover {
   background-color: #3730a3;
-  transform: scale(1.05);
 }
 
 .contact-card {
@@ -156,21 +156,23 @@ h2 {
 }
 
 .socials a {
-  margin: 0 12px;
-  color: var(--primary);
-  font-size: 24px;
-  text-decoration: none;
-  transition: color 0.3s;
+  margin: 0 10px;
+  font-size: 22px;
+  color: var(--text-color);
+  transition: color 0.3s ease;
 }
 
 .socials a:hover {
-  color: var(--accent);
+  color: var(--accent-color);
 }
 
 footer {
-  background-color: var(--primary);
-  color: #fff;
+  background: #fff;
+  color: #6b7280;
   text-align: center;
   padding: 20px;
-  margin-top: 40px;
+  font-size: 0.9rem;
+  border-top: 1px solid var(--border-color);
+  margin-top: 50px;
 }
+
