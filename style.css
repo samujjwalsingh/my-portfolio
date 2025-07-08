@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Outfit', sans-serif;
-  background-color: #fdfdfd;
+  background-color: #fefefe;
   color: #222;
   line-height: 1.6;
 }
@@ -23,9 +23,19 @@ header nav a {
 }
 
 .hero {
-  background: linear-gradient(to right, #e0e7ff, #f3f4f6);
-  padding: 100px 20px;
+  background: linear-gradient(to right, #eef2ff, #f3f4f6);
+  padding: 80px 20px;
   text-align: center;
+}
+
+.hero-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 4px solid #111;
+  object-fit: cover;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
 .cta {
@@ -50,6 +60,14 @@ section {
   margin: auto;
 }
 
+.card {
+  background-color: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  padding: 30px;
+  border-radius: 16px;
+  margin: 20px 0;
+}
+
 .skills {
   list-style: none;
   display: grid;
@@ -64,13 +82,7 @@ section {
   border-radius: 12px;
   text-align: center;
   font-weight: 600;
-}
-
-.project {
-  background-color: #f3f4f6;
-  padding: 20px;
-  margin: 15px 0;
-  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
 .resume-button {
@@ -88,6 +100,10 @@ section {
   transform: scale(1.05);
 }
 
+.contact-card {
+  text-align: center;
+}
+
 .socials a {
   margin: 0 10px;
   color: #111;
@@ -101,5 +117,3 @@ footer {
   text-align: center;
   padding: 20px;
 }
-
-
