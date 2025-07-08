@@ -1,11 +1,12 @@
-/* === Netflix-Inspired Portfolio Styling === */
+/* === Netflix Premium Dark Portfolio Styling === */
 
 :root {
   --bg: #141414;
-  --red: #e50914;
+  --red: #d81f26;
   --text: #ffffff;
   --subtext: #b3b3b3;
   --card: #1f1f1f;
+  --border: #333333;
   --shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
 }
 
@@ -30,7 +31,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid var(--border);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -46,7 +47,7 @@ header nav a {
   margin-left: 20px;
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.3s;
+  transition: color 0.3s ease;
 }
 
 header nav a:hover {
@@ -80,20 +81,24 @@ header nav a:hover {
   color: var(--subtext);
 }
 
-.cta {
+.cta,
+.resume-button {
   display: inline-block;
   margin-top: 25px;
   background: var(--red);
   color: #fff;
   padding: 12px 28px;
-  border-radius: 25px;
+  border-radius: 30px;
   font-weight: bold;
   text-decoration: none;
-  transition: background 0.3s ease;
+  box-shadow: 0 4px 10px rgba(216, 31, 38, 0.3);
+  transition: all 0.3s ease;
 }
 
-.cta:hover {
-  background: #b00710;
+.cta:hover,
+.resume-button:hover {
+  background-color: #b01c20;
+  transform: translateY(-2px) scale(1.03);
 }
 
 section {
@@ -135,22 +140,6 @@ h2 {
   box-shadow: var(--shadow);
 }
 
-.resume-button {
-  background-color: var(--red);
-  color: #fff;
-  padding: 12px 26px;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: bold;
-  display: inline-block;
-  transition: background 0.3s ease;
-  margin-top: 10px;
-}
-
-.resume-button:hover {
-  background-color: #b00710;
-}
-
 .contact-card {
   text-align: center;
 }
@@ -172,5 +161,6 @@ footer {
   text-align: center;
   padding: 20px;
   font-size: 0.9rem;
-  border-top: 1px solid #222;
+  border-top: 1px solid var(--border);
+  margin-top: 50px;
 }
