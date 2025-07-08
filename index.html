@@ -1,72 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ujjwal | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a2e8f5f3c0.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-  <header class="main-header">
-    <div class="container">
-      <h1 class="logo">Ujjwal</h1>
-      <p class="tagline">B.Tech CSE Student | Developer | Stand-up Comic</p>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+  <header>
+    <h1>Ujjwal Kumar</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
   <section class="hero">
-    <div class="container hero-content">
-      <div class="text">
-        <h2>Hi, I'm Ujjwal</h2>
-        <p>First-year B.Tech CSE student at NIET. Passionate about coding, storytelling, and making people laugh on stage.</p>
-        <a href="#contact" class="btn">Get in Touch</a>
-      </div>
-      <div class="hero-image">
-        <img src="your-photo.jpg" alt="Ujjwal">
-      </div>
+    <h2>B.Tech CSE Student | Developer & Stand-Up Comic</h2>
+    <p>Code by day, comedy by night. Mixing logic with laughter.</p>
+    <a class="cta" href="#contact">Let's Connect</a>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm Ujjwal, a first-year B.Tech CSE student at NIET with a unique blend of technical and creative talents. As the founder of "Comics in the Room", I've hosted shows, led teams, and organized open mics. I'm passionate about coding, comedy, and building solutions with a smile.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills">
+      <li><i class="fas fa-code"></i> C Programming</li>
+      <li><i class="fab fa-python"></i> Python</li>
+      <li><i class="fas fa-microphone-alt"></i> Stand-Up Comedy</li>
+      <li><i class="fas fa-users"></i> Leadership</li>
+      <li><i class="fas fa-brain"></i> Problem Solving</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Comics in the Room</h3>
+      <p>A startup organizing open mic events and ticketed comedy shows. Led the team, hosted events, and offered internships.</p>
+    </div>
+    <div class="project">
+      <h3>Next Gen Tech – Infosys Springboard</h3>
+      <p>Course project on emerging technologies and real-world applications.</p>
+    </div>
+    <div class="project">
+      <h3>Python Foundation Program</h3>
+      <p>Completed structured training on programming fundamentals and logic building using Python.</p>
     </div>
   </section>
 
-  <section id="about" class="about">
-    <div class="container about-content">
-      <div class="about-image">
-        <img src="your-photo.jpg" alt="Profile Image">
-      </div>
-      <div class="about-text">
-        <h3>About Me</h3>
-        <p>I’m currently pursuing B.Tech in Computer Science Engineering from NIET. Alongside academics, I actively engage in stand-up comedy and content writing. I love solving problems through code and connecting with people through humor.</p>
-        <a href="resume.pdf" download class="btn-outline">Download Resume</a>
-      </div>
-    </div>
+  <section id="resume">
+    <h2>Resume</h2>
+    <p>Click the button below to download my resume:</p>
+    <a class="resume-button" href="resume.pdf" download>Download Resume</a>
   </section>
 
-  <section id="skills" class="about">
-    <div class="container about-content">
-      <div class="about-text">
-        <h3>Skills</h3>
-        <ul style="list-style: none; padding-left: 0;">
-          <li>• C Programming</li>
-          <li>• Python</li>
-          <li>• Stand-up Comedy</li>
-          <li>• Creative Writing</li>
-        </ul>
-      </div>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p><i class="fas fa-envelope"></i> ujjwalkumar88640@gmail.com</p>
+    <p><i class="fas fa-phone-alt"></i> +91 8864095021</p>
+    <p><i class="fas fa-map-marker-alt"></i> Greater Noida, Uttar Pradesh</p>
+    <div class="socials">
+      <a href="https://github.com/samujjwalsingh" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Ujjwal. Crafted with precision and creativity.</p>
+    <p>© 2025 Ujjwal Kumar. All rights reserved.</p>
   </footer>
 
 </body>
